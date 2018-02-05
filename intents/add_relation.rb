@@ -6,7 +6,7 @@ intent 'AddRelation' do
 	find_relation = Relation.where(:name => name)
 	if find_relation.empty?
 		relation = Relation.create(:name => name, :relation_type => relatn)
-		tell("#{name} is saved as your #{relatn}")
+		tell("#{relation.name} is saved as your #{relation.relation_type}")
 	else
 		find_relation.update(:relation_type => relatn)
 	end
