@@ -9,4 +9,5 @@ intent 'AddRelation' do
 		tell("#{name} is saved as your #{relatn}")
 	else
 		find_relation.update(:relation_type => relatn)
+	end
 end
