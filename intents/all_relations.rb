@@ -4,7 +4,7 @@ intent "AllRelations" do
 
 	#relations.each do |relation|
 		relation_str = ""
-		relation_str = relation_str + "#{relations[0].name} is your #{relations[0].relation_type}. "
+		relation_str = relation_str + "#{relations[1].name} is your #{relations[1].relation_type}. "
 	#end
 
 	tell("#{relation_str}")
