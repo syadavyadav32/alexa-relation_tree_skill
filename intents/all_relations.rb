@@ -1,5 +1,5 @@
 require 'ralyxa'
-intent "AllRelation" do
+intent "AllRelations" do
 	relations = Relation.all
 
 	relations.each do |relation|
